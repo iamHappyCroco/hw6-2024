@@ -8,11 +8,12 @@ window.addEventListener("load", function () {
     document.querySelector("#volume").textContent = video.volume * 100 + "%"; // Set initial volume display
 });
 
-// Play button functionality
+
 document.querySelector("#play").addEventListener("click", function () {
     console.log("Play Video");
     video.play();
-    document.querySelector("#volume").textContent = video.volume * 100 + "%";
+    // Ensure the volume is updated correctly when Play is clicked
+    document.querySelector("#volume").textContent = Math.round(video.volume * 100) + "%";
 });
 
 // Pause button functionality
