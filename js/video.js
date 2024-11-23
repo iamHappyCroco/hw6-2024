@@ -5,7 +5,6 @@ window.addEventListener("load", function () {
     video = document.querySelector("#player1");
     video.autoplay = false; // Turn off autoplay
     video.loop = false; // Turn off looping
-    document.querySelector("#volume").textContent = video.volume * 100 + "%"; // Set initial volume display
 });
 
 
