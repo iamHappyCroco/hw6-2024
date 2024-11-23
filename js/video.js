@@ -12,8 +12,7 @@ window.addEventListener("load", function () {
 document.querySelector("#play").addEventListener("click", function () {
     console.log("Play Video");
     video.play();
-    // Ensure the volume is updated correctly when Play is clicked
-    document.querySelector("#volume").textContent = Math.round(video.volume * 100) + "%";
+    document.querySelector('#volume').textContent = `${video.volume * 100}%`;
 });
 
 // Pause button functionality
